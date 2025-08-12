@@ -14,7 +14,7 @@ const App = () => {
                 </Routes>
             </Router>
             <Toast /> {/* Toast component from react-hot-toast */}
-            <GitHubCorner />
+            {/* <GitHubCorner /> */}
         </>
     )
 }

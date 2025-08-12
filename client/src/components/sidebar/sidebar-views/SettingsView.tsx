@@ -2,7 +2,7 @@ import Select from "@/components/common/Select"
 import { useSettings } from "@/context/SettingContext"
 import useResponsive from "@/hooks/useResponsive"
 import { editorFonts } from "@/resources/Fonts"
-import { editorThemes } from "@/resources/Themes"
+// import { editorThemes } from "@/resources/Themes"
 import { langNames } from "@uiw/codemirror-extensions-langs"
 import { ChangeEvent, useEffect } from "react"
 
@@ -58,7 +58,7 @@ function SettingsView() {
                     title="Font Family"
                 />
                 {/* Choose font size option */}
-                <select
+                {/* <select
                     value={fontSize}
                     onChange={handleFontSizeChange}
                     className="rounded-md border-none bg-darkHover px-4 py-2 text-white outline-none"
@@ -71,15 +71,15 @@ function SettingsView() {
                             </option>
                         )
                     })}
-                </select>
+                </select> */}
             </div>
             {/* Choose theme option */}
-            <Select
+            {/* <Select
                 onChange={handleThemeChange}
                 value={theme}
                 options={Object.keys(editorThemes)}
                 title="Theme"
-            />
+            /> */}
             {/* Choose language option */}
             <Select
                 onChange={handleLanguageChange}
@@ -88,7 +88,7 @@ function SettingsView() {
                 title="Language"
             />
             {/* Show GitHub corner option */}
-            <div className="mt-4 flex w-full items-center justify-between">
+            {/* <div className="mt-4 flex w-full items-center justify-between">
                 <label>Show github corner</label>
                 <label className="relative inline-flex cursor-pointer items-center">
                     <input
@@ -99,7 +99,7 @@ function SettingsView() {
                     />
                     <div className="peer h-6 w-12 rounded-full bg-darkHover outline-none duration-100 after:absolute after:left-1 after:top-1 after:flex after:h-4 after:w-4 after:items-center after:justify-center after:rounded-full after:bg-white after:font-bold after:outline-none after:duration-500 peer-checked:after:translate-x-6 peer-checked:after:border-white peer-focus:outline-none"></div>
                 </label>
-            </div>
+            </div> */}
             <button
                 className="mt-auto w-full rounded-md border-none bg-darkHover px-4 py-2 text-white outline-none"
                 onClick={resetSettings}

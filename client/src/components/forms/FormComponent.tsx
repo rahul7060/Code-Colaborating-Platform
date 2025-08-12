@@ -6,7 +6,9 @@ import { ChangeEvent, FormEvent, useEffect, useRef } from "react"
 import { toast } from "react-hot-toast"
 import { useLocation, useNavigate } from "react-router-dom"
 import { v4 as uuidv4 } from "uuid"
-import logo from "@/assets/logo.svg"
+// import logo from "@/assets/logo.svg"
+// import logo1 from "@/assets/logo1.svg"
+import logo2 from "@/assets/logo2.svg"
 
 const FormComponent = () => {
     const location = useLocation()
@@ -90,7 +92,7 @@ const FormComponent = () => {
 
     return (
         <div className="flex w-full max-w-[500px] flex-col items-center justify-center gap-4 p-4 sm:w-[500px] sm:p-8">
-            <img src={logo} alt="Logo" className="w-full"/>
+            <img src={logo2} alt="Logo2" className="w-full"/>
             <form onSubmit={joinRoom} className="flex w-full flex-col gap-4">
                 <input
                     type="text"

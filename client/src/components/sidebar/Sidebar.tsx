@@ -60,10 +60,10 @@ function Sidebar() {
                     viewName={VIEWS.CHATS}
                     icon={viewIcons[VIEWS.CHATS]}
                 />
-                <SidebarButton
+                {/* <SidebarButton
                     viewName={VIEWS.COPILOT}
                     icon={viewIcons[VIEWS.COPILOT]}
-                />
+                /> */}
                 <SidebarButton
                     viewName={VIEWS.RUN}
                     icon={viewIcons[VIEWS.RUN]}
@@ -78,7 +78,7 @@ function Sidebar() {
                 />
 
                 {/* Button to change activity state coding or drawing */}
-                <div className="flex h-fit items-center justify-center">
+                {/* <div className="flex h-fit items-center justify-center">
                     <button
                         className="justify-cente flex items-center  rounded p-1.5 transition-colors duration-200 ease-in-out hover:bg-[#3D404A]"
                         onClick={changeState}
@@ -108,7 +108,7 @@ function Sidebar() {
                             float={true}
                         />
                     )}
-                </div>
+                </div> */}
             </div>
             <div
                 className="absolute left-0 top-0 z-20 w-full flex-col bg-dark md:static md:min-w-[300px]"
